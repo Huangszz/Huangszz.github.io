@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度智能小程序</title>
+    <link rel='stylesheet' href='css/base.css'>
+    <link rel='stylesheet' href='css/common.css'>
+</head>
+
+<body>
+    <!-- shortcut是快捷导航的意思，常用于快捷导航栏,宽度铺满，高度为31px -->
+    <header>
+        <div class="shortcut">
+            <div class="fl">
+                <ul>
+                    <li>
+                        <div><img src="./images/logo.png" alt=""></div> &nbsp;
+                    </li>
+                    <li>智能小程序</li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="#">开发文档</a></li>
+                    <li><a href="#">交流中心</a></li>
+                    <li><a href="#">服务市场</a></li>
+                    <li><a href="#">开源联盟</a></li>
+                    <li class='shadow'><a href="#">管理中心</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='Login'>
+            <div class="login">
+                <ul>
+                    <li>
+                        <p>选择您的学校</p>
+                        <div class="schoolnum">选中示例大学</div>
+                    </li>
+                    <li id="year">
+                        <p>选择您入学的年份</p>
+                        <div class="yearnum">2018</div>
+                    </li>
+                    <li>
+                        <p>输入您的电子邮箱</p>
+                        <input type="text" value="" id="email"/>
+                    </li>
+                </ul>
+                <button class='btn'>报名</button>
+            </div>
+
+            <div class = 'yearItems'>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">2010</a>
+                        <a href="javascript:void(0);">2011</a>
+                        <a href="javascript:void(0);">2012</a>
+                        <a href="javascript:void(0);">2013</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">2014</a>
+                        <a href="javascript:void(0);">2015</a>
+                        <a href="javascript:void(0);">2016</a>
+                        <a href="javascript:void(0);">2017</a>
+                    </li>
+                    <li>
+                        <a class='currentyear' href="javascript:void(0);">2018</a>
+                        <a href="javascript:void(0);">2019</a>
+                        <a href="javascript:void(0);">2020</a>
+                        <a href="javascript:void(0);">2021</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = 'school'>
+                <div class="school-th">
+                    <ul>
+                        <li><a class='currentyear' href="javascript:void(0);">北京市</a></li>
+                        <li><a href="javascript:void(0);">重庆市</a></li>
+                        <li><a href="javascript:void(0);">四川省</a></li>
+                        <li><a href="javascript:void(0);">浙江省</a></li>
+                        <li><a href="javascript:void(0);">福建省</a></li>
+                        <li><a href="javascript:void(0);">上海市</a></li>
+                        <li><a href="javascript:void(0);">天津市</a></li>
+                        <li><a href="javascript:void(0);">河南省</a></li>
+                        <li><a href="javascript:void(0);">河北省</a></li>
+                        <li><a href="javascript:void(0);">陕西省</a></li>
+                    </ul>
+                </div>
+                <div class="school-td">
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-bj</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-cq</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-sc</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-zj</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-fj</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-sh</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-tj</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-hn</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-hb</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                    <div class='item'>
+                        <table border="0" cellspacing="0"> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学-sx</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr>
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京理工大学</a></td>
+                                <td><a href="javascript:void(0);">中国农业大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京师范大学</a></td>
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">中央民族大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京林业大学</a></td>
+                                <td><a href="javascript:void(0);">北京中医药大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                            <tr> 
+                                <td><a href="javascript:void(0);">北京大学</a></td>
+                                <td><a href="javascript:void(0);">中国人民大学</a></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        <p class='messageWrong'></p>
+        </div>
+
+        <div class="LoginRight">
+            <div>
+                <p>您已完成报名，开始您的学习之旅吧!</p>
+                <button class="loginAgain">重新报名</button>
+            </div>
+            <p class='messageRight'></p>
+        </div>
+    </header>
+
+
+    <!-- main部分实现,下面分为两个部分floor1和floor2 -->
+    <main>
+        <div class='w'>
+            <div class='floor1'>
+                <h1>我们的宗旨</h1>
+                <ul>
+                    <li>
+                        <h2>自律独立思考</h2>
+                        <img src="./update/img5.png" alt="">
+                    </li>
+                    <li>
+                        <h2>实践</h2>
+                        <img src="./update/img2.png" alt="">
+                    </li>
+                    <li>
+                        <h2>总结回顾</h2>
+                        <img src="./update/img6.png" alt="">
+                    </li>
+                    <li>
+                        <h2>分享交流</h2>
+                        <img src="./update/img4.png" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <div class='floor2' class='w'>
+                <div class='coursetypes'>
+                    <h1>课程安排</h1>
+                    <ul> 
+                        <li class='thiscourse'><a href="javascript:void(0);">全部</a></li>
+                        <li><a href="javascript:void(0);">HTML</a></li>
+                        <li><a href="javascript:void(0);">CSS</a></li>
+                        <li><a href="javascript:void(0);">JavaScript</a></li>
+                    </ul>     
+                </div>
+                <div class='coursecontent'> 
+                    <ul>
+                        <li class="HTML courseitem">
+                            <img src="./update/img6.png" alt="">
+                            <div>
+                                <h2>第一课 这里是课程名字</h2>
+                                <p>这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要,
+                                    这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要
+                                </p>
+                                <item>HTML</item>
+                            </div>
+                        </li>
+                        <li class="HTML courseitem">
+                            <img src="./update/img6.png" alt="">
+                            <div>
+                                <h2>第一课 这里是课程名字</h2>
+                                <p>这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要,
+                                    这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要
+                                </p>
+                                <item>HTML</item>
+                            </div>
+                        </li>
+                        <li class="CSS courseitem">
+                            <img src="./update/img6.png" alt="">
+                            <div>
+                                <h2>第一课 这里是课程名字</h2>
+                                <p>这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要,
+                                    这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要
+                                </p>
+                                <item>CSS</item>
+                            </div>
+                        </li>
+                        <li class="CSS courseitem">
+                            <img src="./update/img6.png" alt="">
+                            <div>
+                                <h2>第一课 这里是课程名字</h2>
+                                <p>这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要,
+                                    这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要
+                                </p>
+                                <item>CSS</item>
+                            </div>
+                        </li>  
+                        <li class="JavaScript courseitem">
+                            <img src="./update/img6.png" alt="">
+                            <div>
+                                <h2>第一课 这里是课程名字</h2>
+                                <p>这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要,
+                                    这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要
+                                </p>
+                                <item>JavaScript</item>
+                            </div>
+                        </li>
+                        <li class="JavaScript courseitem">
+                            <img src="./update/img6.png" alt="">
+                            <div>
+                                <h2>第一课 这里是课程名字</h2>
+                                <p>这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要,
+                                    这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要
+                                </p>
+                                <item>JavaScript</item>
+                            </div>
+                        </li>
+                        <li class="HTML CSS JavaScript courseitem">
+                            <img src="./update/img6.png" alt="">
+                            <div>
+                                <h2>第一课 这里是课程名字</h2>
+                                <p>这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要,
+                                    这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要，这里是课程的概要
+                                </p>
+                                <div id="course_3">
+                                    <item>HTML</item>
+                                    <item>CSS</item>
+                                    <item>JavaScript</item>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                <div/>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class='w'>
+            <div>
+                <ul class="IFE">
+                    <li>
+                        <p>I</p>
+                    </li>
+                    <li>
+                        <p>F</p>
+                    </li>
+                    <li>
+                        <p>E</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <dl>
+                    <dt>
+                        <h3>Links</h3>
+                    </dt>
+                    <dd><a href="#">百度技术培训中心</a></dd>
+                    <dd><a href="#">百度技术</a></dd>
+                    <dd><a href="#">技术培训中心</a></dd>
+                    <dd><a href="#">百度技术培训中心</a></dd>
+                    <dd><a href="#">百度技术</a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <h3>Links</h3>
+                    </dt>
+                    <dd><a href="#">百度技术培训中心</a></dd>
+                    <dd><a href="#">百度技术</a></dd>
+                    <dd><a href="#">技术培训中心</a></dd>
+                    <dd><a href="#">百度技术培训中心</a></dd>
+                    <dd><a href="#">百度技术</a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <h3>Links</h3>
+                    </dt>
+                    <dd><a href="#">百度技术培训中心</a></dd>
+                    <dd><a href="#">百度技术</a></dd>
+                    <dd><a href="#">技术培训中心</a></dd>
+                    <dd><a href="#">百度技术培训中心</a></dd>
+                    <dd><a href="#">百度技术</a></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
