@@ -189,7 +189,7 @@ header {
 .school{
     display: none;
     position: absolute;
-    width: 450px;
+    width: 460px;
     height: 300px;
     top: 128px;
     left: 30px;
@@ -240,7 +240,7 @@ header {
 }
 
 .item table tr td{
-    padding:15px 15px 15px 15px;
+    padding:15px 3px 15px 15px;
 } 
 
 .currentschool{
